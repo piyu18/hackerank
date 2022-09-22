@@ -11,9 +11,14 @@ Given a City table, whose fields are described as
 | Population  | int(11)  |
 +-------------+----------+
 Query the average population of all cities in CITY where District is California.
+
+Query the total population of all cities in CITY where District is California.
 */
 
 --Solution
 
 SELECT AVG(POPULATION) FROM CITY
+WHERE DISTRICT='CALIFORNIA'
+
+SELECT SUM(POPULATION)FROM CITY
 WHERE DISTRICT='CALIFORNIA'
